@@ -1,0 +1,40 @@
+[
+    {
+        "url": "https://raw.githubusercontent.com/Luna712/Luna712-CloudStream-Extensions/builds/DailymotionProvider.cs3",
+        "status": 0,
+        "version": 1,
+        "name": "DailymotionProvider",
+        "internalName": "DailymotionProvider",
+        "authors": [
+            "Luna712"
+        ],
+        "description": "Watch content from Dailymotion",
+        "fileSize": 11472,
+        "repositoryUrl": "https://github.com/Luna712/Luna712-CloudStream-Extensions",
+        "tvTypes": [
+            "Others"
+        ],
+        "iconUrl": "https://www.google.com/s2/favicons?domain=www.dailymotion.com&sz=%size%",
+        "apiVersion": 1,
+        "fileHash": "sha256-96c167875a8c6d3ea0131f076296c2f48d0157cf3ca9d788a29e78d35b9dca1f"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/Luna712/Luna712-CloudStream-Extensions/builds/InternetArchiveProvider.cs3",
+        "status": 1,
+        "version": 22,
+        "name": "InternetArchiveProvider",
+        "internalName": "InternetArchiveProvider",
+        "authors": [
+            "Luna712"
+        ],
+        "description": "Watch content from the Internet Archive at archive.org",
+        "fileSize": 27774,
+        "repositoryUrl": "https://github.com/Luna712/Luna712-CloudStream-Extensions",
+        "tvTypes": [
+            "Others"
+        ],
+        "iconUrl": "https://www.google.com/s2/favicons?domain=archive.org&sz=%size%",
+        "apiVersion": 1,
+        "fileHash": "sha256-dd70f0e9d706d9885e3ce268b426eb24277399adb01c6e2ef1fd1528398686a3"
+    }
+]
