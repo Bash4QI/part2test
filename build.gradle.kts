@@ -48,6 +48,9 @@ subprojects {
         defaultConfig {
             minSdk = 21
             compileSdkVersion(36)
+        }
+
+        lint {
             targetSdk = 36
         }
 
