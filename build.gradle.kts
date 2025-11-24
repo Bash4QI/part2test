@@ -32,7 +32,7 @@ fun Project.cloudstream(configuration: CloudstreamExtension.() -> Unit) = extens
 fun Project.android(configuration: BaseExtension.() -> Unit) = extensions.getByName<BaseExtension>("android").configuration()
 
 subprojects {
-    apply(plugin = "com.android.library")
+    apply(plugin = "com.android.kotlin.multiplatform.library")
     apply(plugin = "kotlin-android")
     apply(plugin = "com.lagradost.cloudstream3.gradle")
 
