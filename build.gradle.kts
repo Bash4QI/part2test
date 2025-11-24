@@ -33,7 +33,6 @@ fun Project.android(configuration: LibraryExtension.() -> Unit) = extensions.get
 
 subprojects {
     apply(plugin = "com.android.library")
-    // apply(plugin = "kotlin-android")
     apply(plugin = "com.lagradost.cloudstream3.gradle")
 
     cloudstream {
@@ -44,10 +43,10 @@ subprojects {
  
     android {
         namespace = "com.luna712"
+        compileSdk = 36
 
         defaultConfig {
             minSdk = 21
-            compileSdkVersion(36)
         }
 
         lint {
