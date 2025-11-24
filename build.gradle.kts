@@ -33,7 +33,7 @@ fun Project.android(configuration: BaseExtension.() -> Unit) = extensions.getByN
 
 subprojects {
     apply(plugin = "com.android.library")
-    apply(plugin = "kotlin-android")
+    // apply(plugin = "kotlin-android")
     apply(plugin = "com.lagradost.cloudstream3.gradle")
 
     cloudstream {
