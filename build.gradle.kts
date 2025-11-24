@@ -12,10 +12,10 @@ buildscript {
     }
 
     dependencies {
-        classpath("com.android.tools.build:gradle:8.13.1")
+        classpath("com.android.tools.build:gradle:9.0.0-beta02")
         // CloudStream gradle plugin which makes everything work and builds plugins
         classpath("com.github.Luna712:gradle:-SNAPSHOT")
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:2.2.21")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:2.3.0-RC")
     }
 }
 
@@ -32,7 +32,7 @@ fun Project.cloudstream(configuration: CloudstreamExtension.() -> Unit) = extens
 fun Project.android(configuration: BaseExtension.() -> Unit) = extensions.getByName<BaseExtension>("android").configuration()
 
 subprojects {
-    apply(plugin = "com.android.kotlin.multiplatform.library")
+    apply(plugin = "com.android.library")
     apply(plugin = "kotlin-android")
     apply(plugin = "com.lagradost.cloudstream3.gradle")
 
