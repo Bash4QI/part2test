@@ -32,7 +32,7 @@ fun Project.cloudstream(configuration: CloudstreamExtension.() -> Unit) = extens
 //fun Project.android(configuration: LibraryExtension.() -> Unit) = extensions.getByName<LibraryExtension>("android").configuration()
 
 fun Project.android(configuration: LibraryExtension.() -> Unit) =
-    extensions.getByType(LibraryExtension::class.java).apply(configuration)
+    extensions.findByType<LibraryExtension>()?.apply(configuration)
 
 subprojects {
     apply(plugin = "com.android.library")
