@@ -12,7 +12,7 @@ buildscript {
     }
 
     dependencies {
-        classpath("com.android.tools.build:gradle:9.0.0-beta03")
+        classpath("com.android.tools.build:gradle:9.1.0")
         // CloudStream gradle plugin which makes everything work and builds plugins
         classpath("com.github.Luna712:gradle:-SNAPSHOT")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:2.3.0-RC")
