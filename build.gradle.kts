@@ -12,10 +12,10 @@ buildscript {
     }
 
     dependencies {
-        classpath("com.android.tools.build:gradle:9.1.0")
+        classpath("com.android.tools.build:gradle:9.2.0")
         // CloudStream gradle plugin which makes everything work and builds plugins
-        classpath("com.github.Luna712:gradle:agp9-support-SNAPSHOT")
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:2.3.20")
+        classpath("com.github.Luna712:gradle:try-new-changes-SNAPSHOT")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:2.3.21")
     }
 }
 
@@ -79,8 +79,8 @@ subprojects {
         // but you don't need to include any of them if you don't need them.
         // https://github.com/recloudstream/cloudstream/blob/master/app/build.gradle.kts
         implementation(kotlin("stdlib")) // Adds Standard Kotlin Features
-        implementation("com.github.Blatzar:NiceHttp:0.4.13") // HTTP Lib
-        implementation("org.jsoup:jsoup:1.21.2") // HTML Parser
+        implementation("com.github.Blatzar:NiceHttp:0.4.18") // HTTP Lib
+        implementation("org.jsoup:jsoup:1.22.2") // HTML Parser
         implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.13.5") // JSON Parser
     }
 }
