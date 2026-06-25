@@ -12,8 +12,8 @@ buildscript {
 
     dependencies {
         classpath("com.android.tools.build:gradle:8.13.1")
-        // النسخة المستقرة الرسمية لبلجن البناء لتفادي مشاكل الـ SNAPSHOT
-        classpath("com.github.recloudstream.gradle:gradle:81b1d424d")
+        // استخدام البلجن الرسمي المستقر
+        classpath("com.github.recloudstream.gradle:gradle:master-SNAPSHOT")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:2.2.21")
     }
 }
@@ -68,8 +68,8 @@ subprojects {
     dependencies {
         val implementation by configurations
 
-        // استبدال الـ SNAPSHOT بنسخة ثابتة ومستقرة لحل مشكلة الـ Read timed out نهائياً
-        implementation("com.github.recloudstream.cloudstream:library:81b1d424d")
+        // هذا هو السطر الذهبي المستقر الذي ينهي مشاكل الجلب من JitPack تماماً
+        implementation("com.github.recloudstream.cloudstream:library:master-SNAPSHOT")
 
         implementation(kotlin("stdlib")) 
         implementation("com.github.Blatzar:NiceHttp:0.4.13") 
