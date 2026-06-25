@@ -1,9 +1,14 @@
-import com.lagradost.cloudstream3.gradle.CloudstreamExtension
-
-val repoUrl = "https://github.com/Bash4QI/part2test"
+// تعيين رقم إصدار البلجن (يجب أن يكون رقماً صحيحاً)
+version = 1
 
 cloudstream {
-    setRepo(repoUrl)
+    // الخصائص الأساسية ليتعرف عليها سكريبت البناء تلقائياً
+    description = "My Custom Arabic Extension"
     authors = listOf("Bash4QI")
+    
+    // تحديد نوع المحتوى
+    tvTypes = listOf("Movies", "TvSeries")
+    
+    // تفعيل التوافقية عبر المنصات
+    isCrossPlatform = true
 }
-
