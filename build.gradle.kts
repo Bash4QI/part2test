@@ -69,7 +69,7 @@ subprojects {
         val implementation by configurations
 
         // استبدال الـ SNAPSHOT بنسخة ثابتة ومستقرة لحل مشكلة الـ Read timed out نهائياً
-        implementation("com.github.recloudstream.cloudstream:library:81b1d424d")
+        implementation("com.github.recloudstream.cloudstream:library:pre-release")
 
         implementation(kotlin("stdlib")) 
         implementation("com.github.Blatzar:NiceHttp:0.4.13") 
