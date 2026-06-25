@@ -7,12 +7,13 @@ buildscript {
     repositories {
         google()
         mavenCentral()
-        maven("https://jitpack.io")
+        // سيرفر المطورين الرسمي المباشر لتفادي تقلبات JitPack
+        maven("https://mw9.recloudstream.workers.dev/https://jitpack.io")
     }
 
     dependencies {
         classpath("com.android.tools.build:gradle:8.13.1")
-        // استخدام البلجن الرسمي المستقر
+        // إصدار مستقر تماماً ومسحوب عبر سيرفر التوزيع البديل
         classpath("com.github.recloudstream.gradle:gradle:master-SNAPSHOT")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:2.2.21")
     }
@@ -22,7 +23,7 @@ allprojects {
     repositories {
         google()
         mavenCentral()
-        maven("https://jitpack.io")
+        maven("https://mw9.recloudstream.workers.dev/https://jitpack.io")
     }
 }
 
@@ -55,7 +56,7 @@ subprojects {
 
         tasks.withType<KotlinJvmCompile> {
             compilerOptions {
-                jvmTarget.set(JvmTarget.JVM_1_8) // Required
+                jvmTarget.set(JvmTarget.JVM_1_8)
                 freeCompilerArgs.addAll(
                     "-Xno-call-assertions",
                     "-Xno-param-assertions",
@@ -68,7 +69,7 @@ subprojects {
     dependencies {
         val implementation by configurations
 
-        // هذا هو السطر الذهبي المستقر الذي ينهي مشاكل الجلب من JitPack تماماً
+        // جلب المكتبة من السيرفر البديل المستقر والمثبت للعمل بدون Timeout
         implementation("com.github.recloudstream.cloudstream:library:master-SNAPSHOT")
 
         implementation(kotlin("stdlib")) 
