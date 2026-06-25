@@ -1,0 +1,13 @@
+{
+    "name": "ExAr",
+    "description": "My Custom Arabic Extension",
+    "pluginClassName": "com.bash4qi.ExArPlugin",
+    "tvVersion": 1,
+    "version": 1,
+    "apiVersion": 2,
+    "authors": [
+        "Bash4QI"
+    ],
+    "language": "ar"
+}
+
